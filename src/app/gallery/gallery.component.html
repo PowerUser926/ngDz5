@@ -1,0 +1,9 @@
+<div class="gallery mt-2 d-flex justify-content-around align-items-center">
+  <img
+    *ngFor="let picture of pictures; let i = index"
+    [src]="picture.src"
+    class="rounded shadow"
+    alt="{{ picture.name }}"
+    (click)="selectPicture(i)"
+  />
+</div>

@@ -1,0 +1,6 @@
+<div class="picture text-center" *ngIf="picture">
+  <h3>"{{ picture.name }}"</h3>
+  <p class="mb-1">({{ picture.year }}) {{ picture.artist }}</p>
+  <p>{{ picture.location }}</p>
+  <img [src]="picture.src" class="rounded shadow" alt="{{ picture.name }}" />
+</div>
